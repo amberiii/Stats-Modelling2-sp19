@@ -17,7 +17,7 @@
 rm(list=ls())
 
 #Load functions.
-source('/Users/ppj/Documents/2019_Spring/StatsModeling/exe3_FUNCTIONS_Linear_Smoothing.r')
+source('/Users/ippjune/Documents/2019_Spring/StatsModeling/exe3_FUNCTIONS_Linear_Smoothing.r')
 
 #------------------------------------------------------------
 ### Data generation.
@@ -72,3 +72,4 @@ for (i in 1:length(H)){
 legend('topleft',legend=paste("h=",H,sep=''),lwd=2,lty=1,col=col,bg='white')
 
 dev.off() #Close pdf file for two plots.
+
