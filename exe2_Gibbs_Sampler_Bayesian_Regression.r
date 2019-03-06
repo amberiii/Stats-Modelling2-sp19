@@ -1,7 +1,8 @@
 #Stats Modeling 2
-#Exercise 02 - Gibbs Sampler for Bayesian Linear Model
+#Piaoping Jiang
+#Exercise 02 
+#Gibbs Sampler for Bayesian Linear Model
 
-#Housekeeping
 rm(list=ls())
 
 #Full hierarchical model:
@@ -138,7 +139,7 @@ country_outliers = as.character(data$CODE[idx_outliers])
 
 plot(1:n,lam_post_mean_inv,main= 'Posterior Mean of lambda for h=1',xlab='Countries',ylab=expression(1/lambda[i]))
 abline(h=sort(lam_post_mean_inv,decreasing=T)[5] - .05,col='blue') #Plots h-line below top 5 points.
-#dev.off()
+dev.off()
 
 #Heavy-tailed Bayesian regression line w outliers labeled.
 plot(X[,2],y,pch=19,col='black',xlab='Defense Spending',ylab='GDP Growth Rate',main='Heavy-Tailed Bayesian Regression Line (h=1)')
@@ -163,5 +164,5 @@ for (g in H){
   plot(1:n,lam_post_mean_inv,main= paste('Lambda Post. Mean, h=',h),xlab='Countries',ylab=expression(1/lambda[i]))
   abline(h=sort(lam_post_mean_inv,decreasing=T)[5] - .01,col='blue') #Plots h-line below top 5 points.
 }
-#dev.off()
+dev.off()
 
