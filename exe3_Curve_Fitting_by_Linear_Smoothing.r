@@ -71,6 +71,4 @@ for (i in 1:length(H)){
 }
 legend('bottomleft',legend=paste("h=",H,sep=''),lwd=2,lty=1,col=col,bg='white')
 
-dev.off() #Close pdf file for two plots.
-
-http://127.0.0.1:27135/graphics/plot_zoom_png?width=909&height=747
+dev.off() 
