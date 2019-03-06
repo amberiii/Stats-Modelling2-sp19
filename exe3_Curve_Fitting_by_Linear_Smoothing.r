@@ -52,7 +52,7 @@ lines(x_star,yhat,col='red')
 H = c(.01,.1,.5,1,5)
 col = rainbow(length(H))
 
-#Open pdf file for two plots.
+#one picture on the whole sceen
 par(mfrow=c(1,1))
 
 #Plot for a variety of bandwidths using Gaussian kernel.
