@@ -1,5 +1,6 @@
 #Stats Modeling 2
 #Exercise 3
+#Piaoping Jiang
 #Curve Fitting by Linear Smoothing - Part B 
 
 #------------------------------------------------------------
@@ -13,7 +14,7 @@
 
 ### Environment setup.
 
-#Housekeeping.
+#remove data
 rm(list=ls())
 
 #Load functions.
@@ -52,7 +53,6 @@ H = c(.01,.1,.5,1,5)
 col = rainbow(length(H))
 
 #Open pdf file for two plots.
-#pdf(file='/Users/jennstarling/UTAustin/2017S_Stats Modeling 2/Exercise-03/Figures/Smoothers.pdf')
 par(mfrow=c(1,1))
 
 #Plot for a variety of bandwidths using Gaussian kernel.
