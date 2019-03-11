@@ -1,12 +1,10 @@
-#Statiscial Modeling 2 - Exercise 2
-#Piaoping Jiang
-#Bayesian Linear Regression
+#Stats Modeling 2 - Exercise 2
 
-#remove the datad
+#Housekeeping
 rm(list=ls())
 
 #Read data file.
-data = read.csv('/Users/ppj/Documents/2019_Spring/StatsModeling/gdpgrowth.csv',header=TRUE)
+data = read.csv('/Users/ippjune/Documents/2019_Spring/StatsModeling/gdpgrowth.csv',header=TRUE)
 
 #Load libraries.
 library(mvtnorm)
@@ -37,7 +35,7 @@ beta_hat = freq_lm$coefficients
 #Visually inspect fit.
 plot(X[,2],y,pch=19,col='black',xlab='X',ylab='y',main='Frequentist Linear Model')
 abline(a=beta_hat[1], b=beta_hat[2],lwd=2,col='blue')
-dev.off()
+#dev.off()
 
 ################################################
 ###   Bayesian linear model (vague prior).   ###
@@ -75,5 +73,5 @@ plot(X[,2],y,pch=19,col='black',
 abline(a=beta_hat[1], b=beta_hat[2],lwd=2,col='blue')
 abline(a=beta_hat_post[1],b=beta_hat_post[2],lwd=2,col='firebrick3')
 legend('topright',legend=c("Freq LM","Bayes LM"),lwd=2,lty=1,col=c('blue','firebrick3'))
-dev.off()
+#dev.off()
 
