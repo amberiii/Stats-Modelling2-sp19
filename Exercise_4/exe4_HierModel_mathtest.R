@@ -31,6 +31,7 @@ count = aggregate(data$mathscore, list(data$school), length)
 df = cbind(mu,min,max,count)[,c(1,2,4,6,8)]
 colnames(df) = c('school','mu','min','max','count')
 df[order(df$count),]
+df[order(df$school),]
 
 #================================================================
 # Hierarchical Model Fit ========================================
@@ -110,4 +111,4 @@ dev.off()
 # Plot Posterior Means vs Empirical Means =======================
 #================================================================
 
-plot(ybar,theta.post.mean,xlab='Empirical Avg by School',ylab='Posterior Mean by School')
+plot(ybar,theta.post.mean,xlab='Empirical Average by School',ylab='Posterior Mean by School',col='red')
