@@ -5,11 +5,11 @@
 rm(list=ls())
 
 #Read in data.
-data = read.csv('/Users/ppj/Documents/2019_Spring/StatsModeling/mathtest.csv',header=T)
+data = read.csv('/Users/ippjune/Documents/2019_Spring/StatsModeling/mathtest.csv',header=T)
 attach(data)
 
 #Read in functions.
-source('/Users/ppj/Documents/2019_Spring/StatsModeling/exe4_FUNCTIONS_HierModel_mathtest.r')
+source('/Users/ippjune/Documents/2019_Spring/StatsModeling/exe4_FUNCTIONS_HierModel_mathtest.r')
 
 ###		y_ij = score for jth student at school i.
 ###		theta_i = underlying mean test score for school i.
